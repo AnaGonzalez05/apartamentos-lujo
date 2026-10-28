@@ -1,0 +1,94 @@
+:root {
+  --gold: #D4AF37;
+  --black: #000000;
+  --beige: #F5F2EB;
+  --white: #FAFAFA;
+  }
+
+  body {
+  background-color: var(--black);
+  color: var(--beige);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+.btn-gold {
+  display: inline-block;
+  background-color: var(--gold);
+  color: var(--black);
+  padding: 0.9rem 2.2rem;
+  font-weight: bold;
+  border-radius: 4px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.btn-gold:hover {
+  opacity: 0.9;
+}
+
+/*Mover a home.css*/
+.hero-section {
+  padding: 6rem 2rem;
+  text-align: center;
+  border-bottom: 1px solid #222;
+  background-color: var(--black);
+}
+
+.hero-title span {
+  color: var(--gold);
+}
+
+.proposal-section {
+  padding: 5rem 2rem;
+  background-color: var(--beige);
+  color: var(--black);
+}
+
+.proposal-title {
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+  color: var(--black);
+  text-align: center;
+}
+
+.proposal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.proposal-grid > div {
+  padding: 2.5rem 2rem;
+  background: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.proposal-grid h3 {
+  color: var(--gold);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.proposal-grid p {
+  color: #333;
+  line-height: 1.5;
+}
