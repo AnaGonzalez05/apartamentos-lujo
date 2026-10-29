@@ -1,0 +1,68 @@
+.apartmentCardListContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.apartmentCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: var(--gray);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.apartmentCardImage {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.apartmentCardName {
+  font-size: 1.2rem;
+  margin: 0;
+  color: var(--gold);
+}
+
+.apartmentCardDescription,
+.apartmentCardLocation {
+  margin: 0;
+  color: var(--gray-clear);
+}
+
+.apartmentCardPrice {
+  margin: 0;
+  font-weight: bold;
+}
+
+.apartmentCardLink,
+.apartmentCardFavorite {
+  padding: 0.6rem;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.apartmentCardLink {
+  background: var(--gold);
+  color: var(--black);
+  margin-top: auto;
+}
+
+.apartmentCardLink:hover {
+  background-color: var(--gray-clear);
+}
+
+.apartmentCardFavorite {
+  background: transparent;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+}
+
+.apartmentCardFavoriteActive {
+  background: var(--gold);
+  color: var(--black);
+}

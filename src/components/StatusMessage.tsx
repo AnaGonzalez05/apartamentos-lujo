@@ -1,3 +1,5 @@
+import "../styles/StatusMessage.css";
+
 interface StatusMessageProps {
     isLoading: boolean;
     error: string | null;

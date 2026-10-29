@@ -1,0 +1,61 @@
+.apartments-page h1 {
+  color: var(--gold);
+  margin: 2rem 0 1rem;
+}
+
+.apartmentsPageEmpty {
+  text-align: center;
+  padding: 2rem;
+  color: var(--gray-clear);
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: end;
+  margin-bottom: 1.5rem;
+}
+
+.search-bar,
+.filter-select {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.search-bar {
+  flex: 1 1 260px;
+}
+
+.search-bar__input,
+.filter-select select {
+  padding: 0.6rem;
+  background: var(--gray);
+  color: var(--beige);
+  border: 1px solid var(--gray-clear);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.pagination button {
+  background: var(--gold);
+  color: var(--black);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.pagination button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

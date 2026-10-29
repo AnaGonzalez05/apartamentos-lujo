@@ -6,6 +6,7 @@ import FilterSelect from '../components/FilterSelect';
 import SearchBar from '../components/SearchBar';
 import StatusMessage from '../components/StatusMessage';
 import { useFetch } from '../hooks/useFetch';
+import "../styles/Apartments.css";
 
 const Apartments = () => {
     const { data: apartments, isLoading, error } = useFetch<Apartment[]>("/data/apartments.json");
@@ -80,7 +81,7 @@ const Apartments = () => {
             {filteredApartments.length > 0 ? (
                 <ApartmentCardList apartment={currentApartments} />
             ) : (
-                <p className="apartments-page__empty" role="status">
+                <p className="apartmentsPageEmpty" role="status">
                     No encontramos apartamentos con esos filtros. Prueba con otra búsqueda.
                 </p>
             )}

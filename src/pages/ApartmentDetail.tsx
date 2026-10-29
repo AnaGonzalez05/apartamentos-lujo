@@ -2,6 +2,7 @@ import { Link, useParams } from 'react-router-dom';
 import { useFetch } from '../hooks/useFetch';
 import type { Apartment } from '../types/apartment';
 import StatusMessage from '../components/StatusMessage';
+import "../styles/ApartmentDetail.css";
 
 const ApartmentDetail = () => {
     const { id } = useParams<{ id: string }>();
@@ -38,7 +39,10 @@ const ApartmentDetail = () => {
             <p>Cantidad de cuartos: {apartment.rooms}</p>
             <p>Cantidad de baños: {apartment.bathrooms}</p>
             <p>Area cuadrada: {apartment.area}</p>
-            <p><strong>Precio: ₡ {apartment.price} mil por noche</strong></p>
+            <p><strong>Precio: ₡{apartment.price} mil por noche</strong></p>
+            <Link className='contactButton' to={`/contacto?apartment=${encodeURIComponent(apartment.name)}`}>
+            Consultar por este apartamento
+            </Link>
         </article>
     )
 }

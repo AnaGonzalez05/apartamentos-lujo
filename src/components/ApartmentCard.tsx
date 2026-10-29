@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import type { Apartment } from "../types/apartment";
 import { useFavorites } from "../hooks/useFavorites";
+import "../styles/ApartmentCard.css";
 
 interface ApartmentCardProps {
     apartment: Apartment;
@@ -11,12 +12,13 @@ const ApartmentCard = ({apartment}: ApartmentCardProps) => {
     const favorite = isFavorite(apartment.id);
 
     return (
-        <article>
+        <article className="apartmentCard">
                 <img className="apartmentCardImage" src={apartment.image} alt={`Ilustración de ${apartment.name}`} />
-                <h1 className="apartmentCardName">{apartment.name}</h1>
+                <h2 className="apartmentCardName">{apartment.name}</h2>
                 <span className="apartmentCardDescription">{apartment.description}</span>
                 <p className="apartmentCardLocation">{apartment.location}</p>
-                <p className="apartmentCardPrice">₡ {apartment.price} mil por noche</p>
+                <p className="apartmentCardPrice">₡{apartment.price} mil por noche</p>
+                <Link className="apartmentCardLink" to={`/apartment/${apartment.id}`}>Ver detalles</Link>
                 <button
                     type="button"
                     className={favorite ? "apartmentCardFavorite apartmentCardFavoriteActive" : "apartmentCardFavorite"}
@@ -24,7 +26,6 @@ const ApartmentCard = ({apartment}: ApartmentCardProps) => {
                 >
                     {favorite ? "Quitar de favoritos" : "Agregar favorito"}
                 </button>
-                <Link className="apartmentCardLink" to={`/apartment/${apartment.id}`}>Ver detalles</Link>
         </article>
     )
 }

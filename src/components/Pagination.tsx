@@ -14,7 +14,7 @@ const Pagination = ({ currentPage, totalPages, onPrevious, onNext }: PaginationP
                 <span aria-hidden="true">←</span> Anterior
             </button>
 
-            <span className="pagination__status" aria-live="polite" aria-atomic="true">
+            <span className="paginationStatus" aria-live="polite" aria-atomic="true">
                 Página <strong>{currentPage}</strong> de {totalPages}
             </span>
 
