@@ -1,0 +1,47 @@
+:root {
+  --gold: #D4AF37;
+  --black: #000000;
+  --beige: #F5F2EB;
+  --white: #FAFAFA;
+  --gray: #333333;
+  --gray-clear: #aaaa;
+  }
+
+  body {
+  background-color: var(--black);
+  color: var(--beige);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+.btn-gold {
+  display: inline-block;
+  background-color: var(--gold);
+  color: var(--black);
+  padding: 0.9rem 2.2rem;
+  font-weight: bold;
+  border-radius: 4px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.btn-gold:hover {
+  opacity: 0.9;
+}

@@ -1,0 +1,250 @@
+.home {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.hero-section {
+  padding: 8rem 2rem;
+  text-align: center;
+  background-color: var(--black);
+  border-bottom: 1px solid var(--gray);
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+.hero-title span {
+  color: var(--gold);
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  color: var(--beige);
+  max-width: 700px;
+  margin: 0 auto 2.5rem auto;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.proposal-section {
+  padding: 5rem 2rem;
+  background-color: var(--beige);
+  color: var(--black);
+}
+
+.proposal-title {
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+  color: var(--black);
+  text-align: center;
+}
+
+.proposal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.proposal-card {
+  padding: 2.5rem 2rem;
+  background: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px var(--gray)(0, 0, 0, 0.05);
+}
+
+.proposal-card h3 {
+  color: var(--gold);
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.proposal-card p {
+  color: var(--gray);
+  line-height: 1.6;
+}
+
+.apartments-home-section {
+  padding: 6rem 2rem;
+  background-color: var(--black);
+}
+
+.apartments-home-title {
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+  text-align: center;
+  color: var(--white);
+}
+
+.apartments-home-subtitle {
+  text-align: center;
+  color: var(--beige);
+  margin-bottom: 3.5rem;
+  font-size: 1.1rem;
+  opacity: 0.85;
+}
+
+.apartments-home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+}
+
+.apartment-item-card {
+  border: 1px solid var(--gray); 
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
+}
+
+.apartment-image-container {
+  height: 220px;
+  overflow: hidden;
+}
+
+.apartment-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.apartment-image-container img:hover {
+  transform: scale(1.05);
+}
+
+.apartment-item-content {
+  padding: 1.8rem 1.8rem 2rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between; 
+}
+
+.apartment-header-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.apartment-price {
+  color: var(--gold);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.apartment-area {
+  color: var(--beige);
+  font-size: 0.85rem;
+  background: var(--gray);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+
+.apartment-name {
+  font-size: 1.25rem;
+  margin-bottom: 0.4rem;
+  color: var(--white);
+}
+
+.apartment-location {
+  color: var(--beige);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
+.apartment-desc {
+  color: var(--gray-clear);
+  font-size: 0.9rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+}
+
+.apartment-features-row {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: var(--beige);
+  margin: 1.2rem 0;
+  border-top: 1px solid var(--gray);
+  border-bottom: 1px solid --gray-clear;
+  padding: 0.6rem 0;
+}
+
+.apartment-amenities-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.amenity-tag {
+  background-color: var(--gray);
+  color: var(--beige);
+  font-size: 0.75rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+}
+
+.apartment-btn {
+  display: block;          
+  width: 100%;             
+  text-align: center;      
+  box-sizing: border-box;  
+  margin-top: 1.5rem;
+}
+
+.apartments-home-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.apartmentCardFavorite {
+  display: block;
+  width: 50%;
+  margin: 0 0 0.75rem;
+  padding: 0.6rem 1rem;
+  background: transparent;
+  border: 1px solid var(--gold);
+  border-radius: 4px;
+  color: var(--gold);
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: background 0.2s, color 0.2s;
+}
+
+.apartmentCardFavorite:hover,
+.apartmentCardFavoriteActive {
+  background: var(--gold);
+  color: var(--black);
+}
+
+.apartment-item-content .apartmentCardFavorite {
+  margin: 1.5rem 0 0.75rem;
+}
+
+.apartment-item-content .apartmentCardFavorite + .apartment-btn {
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .apartments-home-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .apartments-home-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+}

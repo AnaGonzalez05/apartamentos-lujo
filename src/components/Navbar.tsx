@@ -18,7 +18,8 @@ function Navbar() {
     <header className="navbar">
       <div className="navbar__inner">
         <NavLink to="/" className="navbar__brand" onClick={closeMenu}>
-          Nombre de la marca
+          <img src="/images/Logo.png" alt="" className="navbar__logo" />
+          <span>Aurélis</span>
         </NavLink>
 
         <button

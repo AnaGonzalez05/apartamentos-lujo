@@ -1,8 +1,9 @@
 .footer {
-  background: var(--color-black, #111);
-  color: var(--color-beige, #e8dcc4);
+  background: var(--black);
+  color: var(--beige);
   padding: 2.5rem 1.25rem 1.25rem;
   font-size: 0.9rem;
+  border-top: 1px solid var(--gray);
 }
 
 .footer__grid {
@@ -16,15 +17,16 @@
 .footer h2,
 .footer h3 {
   margin: 0 0 0.75rem;
-  font-family: var(--font-title, Georgia, serif);
+  font-family: Georgia, serif;
   font-weight: 400;
-  color: var(--color-white, #fff);
+  color: var(--white);
 }
 
 .footer__logo {
   font-size: 1.3rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  color: var(--gold);
 }
 
 .footer h3 {
@@ -36,18 +38,6 @@
   line-height: 1.6;
 }
 
-.footer__badge {
-  font-size: 0.7rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--color-gold, #c9a24b);
-}
-
-.footer__badge::before {
-  content: '•';
-  margin-right: 0.4rem;
-}
-
 .footer__col {
   display: flex;
   flex-direction: column;
@@ -55,12 +45,12 @@
 
 .footer__col a {
   margin-bottom: 0.6rem;
-  color: var(--color-beige, #e8dcc4);
+  color: var(--beige);
   text-decoration: none;
 }
 
 .footer__col a:hover {
-  color: var(--color-gold, #c9a24b);
+  color: var(--gold);
 }
 
 .footer__label {
@@ -68,14 +58,14 @@
   font-size: 0.7rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--color-gold, #c9a24b);
+  color: var(--gold);
 }
 
 .footer__bottom {
   max-width: 1200px;
   margin: 2rem auto 0;
   padding-top: 1rem;
-  border-top: 1px solid rgba(201, 162, 75, 0.3);
+  border-top: 1px solid var(--gray);
   font-size: 0.75rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;

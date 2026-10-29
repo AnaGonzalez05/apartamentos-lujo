@@ -1,0 +1,9 @@
+.status-message {
+  text-align: center;
+  padding: 2rem;
+  color: var(--gold);
+}
+
+.status-message--error {
+  color: #ff6b6b;
+}

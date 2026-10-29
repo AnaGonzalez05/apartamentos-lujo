@@ -10,10 +10,9 @@ function Footer() {
         <div className="footer__brand">
           <h2 className="footer__logo">{BRAND}</h2>
           <p>
-            Exclusividad arquitectónica y serenidad frente al horizonte más
-            codiciado de Costa Rica.
+            Mas de 5 años de experiencia en el mercado inmobiliario, contactanos
+             y te ayudaremos a encontrar tu hogar ideal.
           </p>
-          <p className="footer__badge">Adquisiciones privadas disponibles</p>
         </div>
 
         <nav className="footer__col" aria-label="Enlaces del pie de página">
@@ -28,22 +27,22 @@ function Footer() {
           <h3>Contacto</h3>
           <p>
             <span className="footer__label">Correo</span>
-            contacto@ejemplo.cr
+            aurelis@aparments.cr
           </p>
           <p>
             <span className="footer__label">Teléfono</span>
-            +506 0000 0000
+            +506 6980 1234
           </p>
           <p>
             <span className="footer__label">Ubicación</span>
-            San José, Costa Rica
+            Alajuela, Costa Rica
           </p>
         </div>
       </div>
 
       <div className="footer__bottom">
         <p>
-          © {new Date().getFullYear()} {BRAND}. Proyecto académico.
+          © {new Date().getFullYear()} {BRAND}. Todos los derechos reservados.
         </p>
       </div>
     </footer>
