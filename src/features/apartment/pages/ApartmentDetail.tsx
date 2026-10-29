@@ -1,7 +1,7 @@
 import { Link, useParams } from 'react-router-dom';
-import { useFetch } from '../hooks/useFetch';
+import { useFetch } from "../../../hooks/useFetch";
 import type { Apartment } from '../types/apartment';
-import StatusMessage from '../components/StatusMessage';
+import StatusMessage from "../../../components/StatusMessage";
 import "../styles/ApartmentDetail.css";
 
 const ApartmentDetail = () => {

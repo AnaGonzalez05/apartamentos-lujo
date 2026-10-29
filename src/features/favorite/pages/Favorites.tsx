@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
-import { useFetch } from '../hooks/useFetch'
-import { useFavorites } from '../hooks/useFavorites'
-import ApartmentCard from '../components/ApartmentCard'
-import type { Apartment } from '../types/apartment'
+import { useFetch } from '../../../hooks/useFetch'
+import { useFavorites } from '../hooks/useFavorites';
+import ApartmentCard from '../../apartment/components/ApartmentCard';
+import type { Apartment } from '../../apartment/types/apartment';
 import '../styles/favorites.css'
 
 function Favorites() {

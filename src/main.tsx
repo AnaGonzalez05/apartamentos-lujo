@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import './styles/global.css'
 import App from './App.tsx'
-import { FavoritesProvider } from './context/FavoritesProvider'
+import { FavoritesProvider } from './features/favorite/context/FavoritesProvider.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

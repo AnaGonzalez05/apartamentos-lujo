@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useSearchParams } from "react-router-dom";
-import apartmentsData from "../../public/data/apartments.json";
+import apartmentsData from "../../../../public/data/apartments.json";
 import type { ContactFormType } from "../types/contactForm";
 
 const ContactForm = () => {

@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import ApartmentCardList from '../components/ApartmentCardList'
+import ApartmentCardList from "../components/ApartmentCardList";
 import type { Apartment } from '../types/apartment';
-import Pagination from '../components/Pagination';
+import Pagination from "../../../components/Pagination";
 import FilterSelect from '../components/FilterSelect';
 import SearchBar from '../components/SearchBar';
-import StatusMessage from '../components/StatusMessage';
-import { useFetch } from '../hooks/useFetch';
+import StatusMessage from "../../../components/StatusMessage";
+import { useFetch } from "../../../hooks/useFetch";
 import "../styles/Apartments.css";
 
 const Apartments = () => {

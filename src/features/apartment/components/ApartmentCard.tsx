@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import type { Apartment } from "../types/apartment";
-import { useFavorites } from "../hooks/useFavorites";
+import { useFavorites } from "../../favorite/hooks/useFavorites";
 import "../styles/ApartmentCard.css";
 
 interface ApartmentCardProps {

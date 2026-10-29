@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import apartmentsData from "../../public/data/apartments.json";
-import "../styles/global.css";
+import apartmentsData from "../../../../public/data/apartments.json";
+import "../../../styles/global.css";
 import "../styles/home.css";
-import type { Apartment } from "../types/apartment";
-import { useFavorites } from "../hooks/useFavorites";
+import { useFavorites } from "../../favorite/hooks/useFavorites";
+import type { Apartment } from "../../apartment/types/apartment";
 
 export default function Home() {
   const { isFavorite, toggleFavorite } = useFavorites();
