@@ -1,24 +1,27 @@
-# Nombre de la marca
+# Aurélis Apartments
 
-Aplicación web y móvil para promocionar apartamentos de lujo. Permite explorar un catálogo, ver el detalle de cada propiedad, filtrar, guardar favoritos y enviar una solicitud de contacto o visita (el envío es simulado, no hay backend).
+Aplicación web y móvil para promocionar apartamentos de lujo. Permite explorar un catálogo, ver el detalle de cada propiedad, filtrar, guardar favoritos y enviar una solicitud de contacto o visita. **El envío del formulario es simulado: no hay backend.**
 
-Proyecto #1 de Desarrollo de Software, Universidad de Costa Rica, Sede de Occidente, II ciclo 2026.
+Proyecto #1 de Desarrollo de Software IV, Universidad de Costa Rica, Sede de Occidente, II ciclo 2026.
 
 ## Integrantes
-- Ana Gonzalez Silva - C5F593
-- Rachel Santamaria -
-- Dariel -
+
+- Dariel Calvo Brenes - C5D517
+- Ana González Silva - C5F593
+- Rachel Santamaría Rosales - C4J878
 
 ## Enlaces
 
-- Versión web (Vercel): _pendiente_
-- Repositorio: (https://github.com/AnaGonzalez05/apartamentos-lujo.git)
+- Versión web (Vercel):(https://apartamentos-lujo.vercel.app)
+- Repositorio (GitHub):(https://github.com/AnaGonzalez05/apartamentos-lujo)
+- Evidencia de ejecución en Android (video): (https://drive.google.com/file/d/1Xy3zKDevWLXnb319NO4ZGgDYy2xEpAXi/view?usp=sharing)
 
 ## Tecnologías
 
 - React con TypeScript
 - Vite
 - React Router
+- React Hook Form (formulario de contacto)
 - CSS tradicional
 - Context API y localStorage (favoritos)
 - Capacitor (versión Android)
@@ -26,15 +29,35 @@ Proyecto #1 de Desarrollo de Software, Universidad de Costa Rica, Sede de Occide
 
 ## Instalación
 
+Requisitos: Node.js y Git. Para la versión Android, Android Studio.
+
 1. Clonar el repositorio:
+
 ```bash
-   git clone URL-DEL-REPO
-   cd apartamentos-lujo
+git clone https://github.com/AnaGonzalez05/apartamentos-lujo.git
+cd apartamentos-lujo
 ```
+
 2. Instalar dependencias:
+
 ```bash
-   npm install
+npm install
 ```
+
+3. Iniciar en modo desarrollo:
+
+```bash
+npm run dev
+```
+
+### Ejecutar en Android
+
+```bash
+npm run build
+npx cap sync android
+npx cap open android
+```
+
 ## Comandos
 
 | Comando | Qué hace |
@@ -47,10 +70,25 @@ Proyecto #1 de Desarrollo de Software, Universidad de Costa Rica, Sede de Occide
 
 ## Estructura del proyecto
 
-- `public/data/`: JSON con los apartamentos
-- `src/pages/`: páginas (Inicio, Apartamentos, Detalle, Favoritos, Contacto, 404)
-- `src/components/`: componentes reutilizables
-- `src/hooks/`: hook personalizado para cargar los datos
-- `src/context/`: contexto de favoritos
-- `src/types/`: interfaces y tipos de TypeScript
-- `src/styles/`: hojas de estilo
+```
+apartamentos-lujo/
+├── android/              Proyecto Android (Capacitor)
+├── public/
+│   ├── data/             apartments.json con los 20 apartamentos
+│   └── images/           Logo
+├── src/
+│   ├── components/       Layout, Navbar, Footer, Pagination, StatusMessage
+│   ├── hooks/            useFetch (carga el JSON)
+│   ├── pages/            NotFound (404)
+│   ├── styles/           Estilos globales y compartidos
+│   ├── features/
+│   │   ├── apartment/    Catálogo, detalle, búsqueda y filtros
+│   │   ├── contact/      Formulario de contacto
+│   │   ├── favorite/     Contexto, hook y página de favoritos
+│   │   └── home/         Página de inicio
+│   ├── App.tsx           Rutas
+│   └── main.tsx          Punto de entrada y proveedores
+├── capacitor.config.ts   Configuración de Capacitor
+├── vercel.json           Configuración SPA para Vercel
+└── package.json
+```
