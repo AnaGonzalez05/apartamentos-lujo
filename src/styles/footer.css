@@ -1,0 +1,99 @@
+.footer {
+  background: var(--black);
+  color: var(--beige);
+  padding: 2.5rem 1.25rem 1.25rem;
+  font-size: 0.9rem;
+  border-top: 1px solid var(--gray);
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer h2,
+.footer h3 {
+  margin: 0 0 0.75rem;
+  font-family: Georgia, serif;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.footer__logo {
+  font-size: 1.3rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.footer h3 {
+  font-size: 1.05rem;
+}
+
+.footer p {
+  margin: 0 0 0.75rem;
+  line-height: 1.6;
+}
+
+.footer__col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__col a {
+  margin-bottom: 0.6rem;
+  color: var(--beige);
+  text-decoration: none;
+}
+
+.footer__col a:hover {
+  color: var(--gold);
+}
+
+.footer__label {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.footer__bottom {
+  max-width: 1200px;
+  margin: 2rem auto 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--gray);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.footer__bottom p {
+  margin: 0;
+}
+
+/* Tableta */
+@media (min-width: 640px) {
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer__brand {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Escritorio */
+@media (min-width: 960px) {
+  .footer__grid {
+    grid-template-columns: 1.6fr 1fr 1.2fr;
+    gap: 3rem;
+  }
+
+  .footer__brand {
+    grid-column: auto;
+  }
+}
