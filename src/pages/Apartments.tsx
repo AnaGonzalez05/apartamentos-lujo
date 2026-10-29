@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import ApartmentCardList from '../components/ApartmentCardList'
 import type { Apartment } from '../types/apartment';
 import Pagination from '../components/Pagination';
