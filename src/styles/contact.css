@@ -23,3 +23,18 @@
   max-width: 400px;
   margin: 0 auto;
 }
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 1024px) {
+  .contact {
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
+    align-items: start;
+  }
+}

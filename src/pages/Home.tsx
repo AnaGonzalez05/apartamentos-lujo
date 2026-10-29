@@ -3,8 +3,11 @@ import apartmentsData from "../../public/data/apartments.json";
 import "../styles/global.css";
 import "../styles/home.css";
 import type { Apartment } from "../types/apartment";
+import { useFavorites } from "../hooks/useFavorites";
 
 export default function Home() {
+  const { isFavorite, toggleFavorite } = useFavorites();
+
   return (
     <div className="home-container">
       <section className="hero-section">
@@ -110,6 +113,18 @@ export default function Home() {
                       ))}
                     </div>
                   </div>
+
+                  <button
+                    type="button"
+                    className={
+                      isFavorite(apt.id)
+                        ? "apartmentCardFavorite apartmentCardFavoriteActive"
+                        : "apartmentCardFavorite"
+                    }
+                    onClick={() => toggleFavorite(apt.id)}
+                  >
+                    {isFavorite(apt.id) ? "Quitar de favoritos" : "Agregar favorito"}
+                  </button>
 
                   <Link
                     to={`/apartment/${apt.id}`}

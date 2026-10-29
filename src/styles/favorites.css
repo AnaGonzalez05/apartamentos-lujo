@@ -1,0 +1,32 @@
+.favorites {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.favorites h1 {
+  margin: 0 0 1.5rem;
+  color: var(--white);
+}
+
+.favorites__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.favorites__grid > * {
+  flex: 1 1 280px;
+}
+
+.favorites__empty {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  color: var(--beige);
+}
+
+.favorites__status {
+  padding-top: 2rem;
+  color: var(--beige);
+}

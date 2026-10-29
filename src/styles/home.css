@@ -201,3 +201,50 @@
   box-sizing: border-box;  
   margin-top: 1.5rem;
 }
+
+.apartments-home-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.apartmentCardFavorite {
+  display: block;
+  width: 50%;
+  margin: 0 0 0.75rem;
+  padding: 0.6rem 1rem;
+  background: transparent;
+  border: 1px solid var(--gold);
+  border-radius: 4px;
+  color: var(--gold);
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: background 0.2s, color 0.2s;
+}
+
+.apartmentCardFavorite:hover,
+.apartmentCardFavoriteActive {
+  background: var(--gold);
+  color: var(--black);
+}
+
+.apartment-item-content .apartmentCardFavorite {
+  margin: 1.5rem 0 0.75rem;
+}
+
+.apartment-item-content .apartmentCardFavorite + .apartment-btn {
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .apartments-home-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .apartments-home-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+}
