@@ -3,6 +3,8 @@
   --black: #000000;
   --beige: #F5F2EB;
   --white: #FAFAFA;
+  --gray: #333333;
+  --gray-clear: #aaaa;
   }
 
   body {
@@ -42,53 +44,4 @@ button {
 
 .btn-gold:hover {
   opacity: 0.9;
-}
-
-/*Mover a home.css*/
-.hero-section {
-  padding: 6rem 2rem;
-  text-align: center;
-  border-bottom: 1px solid #222;
-  background-color: var(--black);
-}
-
-.hero-title span {
-  color: var(--gold);
-}
-
-.proposal-section {
-  padding: 5rem 2rem;
-  background-color: var(--beige);
-  color: var(--black);
-}
-
-.proposal-title {
-  font-size: 2.2rem;
-  margin-bottom: 3rem;
-  color: var(--black);
-  text-align: center;
-}
-
-.proposal-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-}
-
-.proposal-grid > div {
-  padding: 2.5rem 2rem;
-  background: var(--white);
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-}
-
-.proposal-grid h3 {
-  color: var(--gold);
-  margin-bottom: 1rem;
-  font-size: 1.3rem;
-}
-
-.proposal-grid p {
-  color: #333;
-  line-height: 1.5;
 }

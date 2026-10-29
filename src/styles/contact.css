@@ -1,0 +1,25 @@
+
+.success-card {
+  text-align: center;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.success-card h3 {
+  color: var(--gold);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.success-card p {
+  color: var(--beige);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  max-width: 400px;
+  margin: 0 auto;
+}
